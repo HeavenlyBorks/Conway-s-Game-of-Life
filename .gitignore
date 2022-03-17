@@ -1,6 +1,6 @@
 #java class files
 *.class
 
-#run folder, where I compile
+#run folder, where I compile for testing
 run/
 
