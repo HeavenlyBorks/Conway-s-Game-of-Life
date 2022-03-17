@@ -12,7 +12,7 @@ public class Main {
     // final AnsiFormat option = new AnsiFormat(TEXT_COLOR(220));
     
     // initializing the grid
-    System.out.println("\033[2JWelcome to Conway's Game of Life!\nPlease note: It's recommended your board be between 10-25 cells wide/tall,\notherwise it might not look very good :(");
+    System.out.println("Welcome to Conway's Game of Life!\nPlease note: It's recommended your board be between 10-25 cells wide/tall,\notherwise it might not look very good :(");
     System.out.print("How wide do you want the board to be? ");
     int dimensionX = input.nextInt();
     System.out.print("How tall do you want the board to be? ");
@@ -36,7 +36,7 @@ public class Main {
     System.out.print("\033[2J");
     for (Being[] row : grid) {
       for (Being tile : row) {
-        if (tile.alive) { System.out.print("o "); } else { System.out.print("~ "); }
+        if (tile.alive) { System.out.print("\033[31mo\033[0m "); } else { System.out.print("\033[0m~ "); }
       }
       System.out.print("\n");
     }
@@ -106,7 +106,7 @@ public class Main {
       for (Being[] row : grid) {
         for (Being tile : row) {
           tile.check();
-          if (tile.alive) { System.out.print("o "); } else { System.out.print("~ "); }
+          if (tile.alive) { System.out.print("\033[31mo\033[0m "); } else { System.out.print("\033[0m~ "); }
         }
         System.out.print("\n");
       }
