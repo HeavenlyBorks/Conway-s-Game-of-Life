@@ -1,2 +1,2 @@
 # Conway's Game of Life
-Simulation of Conway's Game of Life! Work in progress!! The starting cells are hard coded for now, I still need to add a way to modify cells and I'm planning on implementing a GUI for it too.
+Simulation of Conway's Game of Life! Work in progress!! The starting cells are hard coded. Was thinking of adding a GUI but I'm too lazy :p
